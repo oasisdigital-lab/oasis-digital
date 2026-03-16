@@ -1,0 +1,111 @@
+export default function OasisDigitalLandingPage() {
+  return (
+    <div className="min-h-screen bg-[#f5f1ea] text-[#2f3a2c]">
+      <section className="max-w-6xl mx-auto px-6 py-16 md:py-24">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <div className="inline-flex items-center rounded-full border border-[#b79b6b]/40 px-4 py-2 text-sm tracking-wide text-[#8d7448] bg-white/60 mb-6">
+              Oasis Digital
+            </div>
+            <h1 className="text-4xl md:text-6xl font-serif leading-tight mb-6">
+              Un oasis de claridad en medio del mundo digital.
+            </h1>
+            <p className="text-lg md:text-xl text-[#4c5a47] leading-relaxed mb-8 max-w-xl">
+              Tecnología, estrategia y mentalidad para construir una vida profesional más consciente, más inteligente y más humana.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href="#servicios"
+                className="rounded-2xl bg-[#2f3a2c] text-white px-6 py-3 shadow-sm hover:opacity-90 transition"
+              >
+                Explorar
+              </a>
+              <a
+                href="#contacto"
+                className="rounded-2xl border border-[#2f3a2c] px-6 py-3 hover:bg-white/60 transition"
+              >
+                Contacto
+              </a>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="rounded-[2rem] bg-white/70 border border-[#d9cbb5] shadow-lg p-8">
+              <div className="aspect-square rounded-[2rem] border border-[#c2aa81] flex items-center justify-center bg-gradient-to-br from-[#f8f4ed] to-[#ece4d6]">
+                <div className="text-center">
+                  <div className="mx-auto mb-6 w-40 h-40 rounded-full border-2 border-[#9b7a49] relative overflow-hidden bg-[#f5f1ea]">
+                    <div className="absolute bottom-0 left-0 right-0 h-16 bg-[#52654d] rounded-t-[45%]" />
+                    <div className="absolute bottom-6 left-0 right-0 h-12 border-t-2 border-[#9b7a49] rounded-[50%]" />
+                    <div className="absolute top-7 left-1/2 -translate-x-1/2 w-12 h-12 border-2 border-[#9b7a49] rounded-full" />
+                    <div className="absolute top-2 left-1/2 -translate-x-1/2 w-px h-8 bg-[#9b7a49]" />
+                    <div className="absolute top-6 left-[30px] w-[2px] h-[48px] bg-[#52654d] rotate-[8deg] origin-bottom" />
+                    <div className="absolute top-[20px] left-[18px] w-8 h-4 bg-[#52654d] rounded-full rotate-[-25deg]" />
+                    <div className="absolute top-[28px] left-[10px] w-7 h-4 bg-[#52654d] rounded-full rotate-[-5deg]" />
+                    <div className="absolute top-[34px] left-[20px] w-7 h-4 bg-[#52654d] rounded-full rotate-[18deg]" />
+                    <div className="absolute top-[42px] right-[18px] h-[2px] w-10 bg-[#9b7a49]" />
+                    <div className="absolute top-[42px] right-[8px] w-2 h-2 border-2 border-[#9b7a49]" />
+                    <div className="absolute top-[56px] right-[18px] h-[2px] w-10 bg-[#9b7a49]" />
+                    <div className="absolute top-[56px] right-[8px] w-2 h-2 border-2 border-[#9b7a49]" />
+                  </div>
+                  <div className="text-3xl tracking-[0.25em] text-[#2f3a2c]">OASIS</div>
+                  <div className="mt-2 text-sm tracking-[0.6em] text-[#8d7448]">DIGITAL</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" className="max-w-6xl mx-auto px-6 py-8 md:py-16">
+        <div className="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              title: 'Tecnología con propósito',
+              text: 'DevOps, AI, cloud y sistemas explicados de forma clara, estratégica y útil para la vida real.',
+            },
+            {
+              title: 'Mentalidad estratégica',
+              text: 'Ideas sobre decisiones, carrera, disciplina y claridad mental en una era dominada por la velocidad digital.',
+            },
+            {
+              title: 'Marca y visión',
+              text: 'Un espacio para construir una identidad profesional sólida, humana y preparada para el futuro.',
+            },
+          ].map((item) => (
+            <div key={item.title} className="rounded-[2rem] bg-white/70 border border-[#dfd3c0] p-6 shadow-sm">
+              <h3 className="text-xl mb-3 font-medium">{item.title}</h3>
+              <p className="text-[#5a6855] leading-relaxed">{item.text}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="max-w-4xl mx-auto px-6 py-12 md:py-20 text-center">
+        <p className="text-sm uppercase tracking-[0.35em] text-[#8d7448] mb-4">Propósito</p>
+        <h2 className="text-3xl md:text-5xl font-serif leading-tight mb-6">
+          Diseñar una vida más consciente dentro del ecosistema digital.
+        </h2>
+        <p className="text-lg text-[#556251] leading-relaxed max-w-3xl mx-auto">
+          Oasis Digital nace como una contradicción necesaria: un espacio de belleza, orden y pensamiento dentro del ruido tecnológico que define nuestra época.
+        </p>
+      </section>
+
+      <section id="contacto" className="max-w-6xl mx-auto px-6 pb-16 md:pb-24">
+        <div className="rounded-[2rem] bg-[#2f3a2c] text-white p-8 md:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-[#d0b07d] mb-3">Contacto</p>
+            <h3 className="text-2xl md:text-3xl font-serif mb-3">Oasis Digital</h3>
+            <p className="text-white/80 max-w-xl">
+              Tecnología, estrategia y claridad para la era digital.
+            </p>
+          </div>
+          <div className="space-y-2 text-white/90">
+            <p>WhatsApp Business</p>
+            <p>Instagram / TikTok / Web</p>
+            <p>Próximamente: contenido, comunidad y consultoría</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
