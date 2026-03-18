@@ -79,6 +79,11 @@
       border-radius: 16px;
       font-size: 16px;
       display: inline-block;
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
     }
 
     .btn-primary {
@@ -240,6 +245,31 @@
       padding: 48px 0;
     }
 
+    .guide-section {
+      padding-top: 12px;
+    }
+
+    .guide-box {
+      background: rgba(255,255,255,0.72);
+      border: 1px solid #dfd3c0;
+      border-radius: 28px;
+      padding: 36px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+    }
+
+    .guide-box h2 {
+      font-size: 40px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .guide-box p {
+      font-size: 20px;
+      color: #556251;
+      max-width: 760px;
+      margin-bottom: 24px;
+    }
+
     .cards {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -341,12 +371,19 @@
         font-size: 42px;
       }
 
-      .purpose h2 {
+      .purpose h2,
+      .guide-box h2 {
         font-size: 34px;
       }
 
       .logo-text-main {
         font-size: 38px;
+      }
+
+      .guide-box p,
+      .hero p,
+      .purpose p {
+        font-size: 18px;
       }
     }
   </style>
@@ -366,13 +403,14 @@
           más consciente, más inteligente y más humana.
         </p>
 
-       <div class="buttons">
-        <a class="btn btn-primary" href="GuiaGratuita.pdf" download>
-          Descargar guía gratuita
-        </a>
-        <a class="btn btn-secondary" href="#servicios">
-          Explorar
-        </a>
+        <div class="buttons">
+          <a class="btn btn-primary" href="GuiaGratuita.pdf" download>
+            Descargar guía gratuita
+          </a>
+          <a class="btn btn-secondary" href="#guia">
+            Ver guía
+          </a>
+        </div>
       </div>
 
       <div class="logo-card">
@@ -401,6 +439,26 @@
 
           <div class="logo-text-main">OASIS</div>
           <div class="logo-text-sub">DIGITAL</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="guia" class="guide-section">
+      <div class="guide-box">
+        <div class="eyebrow">Guía gratuita</div>
+        <h2>Descarga “7 Formas Reales de Usar IA”</h2>
+        <p>
+          Una guía práctica para adultos que quieren ahorrar tiempo, reducir el estrés
+          y empezar a usar inteligencia artificial con más claridad.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" href="GuiaGratuita.pdf" download>
+            Descargar PDF
+          </a>
+          <a class="btn btn-secondary" href="#contacto">
+            Contacto
+          </a>
         </div>
       </div>
     </section>
