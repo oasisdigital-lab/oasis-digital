@@ -405,7 +405,7 @@
 
         <div class="buttons">
           <a class="btn btn-primary" href="#guia">
-            Descargar guía gratuita
+            Descarga la guía gratuita
           </a>
           <a class="btn btn-secondary" href="#contacto">
             Contacto
@@ -452,14 +452,57 @@
           y empezar a usar inteligencia artificial con más claridad.
         </p>
 
-        <div class="buttons">
-          <a class="btn btn-primary" href="GuiaGratuita.pdf" download>
-            Descargar PDF
-          </a>
-          <a class="btn btn-secondary" href="#contacto">
-            Contacto
-          </a>
-        </div>
+        <form
+          action="https://formspree.io/f/mbdzwkeq"
+          method="POST"
+          style="display:flex; flex-direction:column; gap:14px; max-width:420px;"
+        >
+          <label style="font-size:14px; color:#8d7448;">
+            ¿Cómo te llamas?
+          </label>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Ej: María"
+            required
+            style="
+              padding:14px;
+              border-radius:14px;
+              border:1px solid #d9cbb5;
+              font-size:16px;
+              background:white;
+            "
+          >
+
+          <label style="font-size:14px; color:#8d7448;">
+            ¿A qué correo quieres recibir la guía?
+          </label>
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Ej: maria@email.com"
+            required
+            style="
+              padding:14px;
+              border-radius:14px;
+              border:1px solid #d9cbb5;
+              font-size:16px;
+              background:white;
+            "
+          >
+
+          <input
+            type="hidden"
+            name="_redirect"
+            value="gracias.html"
+          >
+
+          <button class="btn btn-primary" type="submit">
+            Recibir guía gratuita
+          </button>
+        </form>
       </div>
     </section>
 
