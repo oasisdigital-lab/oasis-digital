@@ -453,6 +453,7 @@
         </p>
 
         <form
+          id="guiaForm"
           action="https://formspree.io/f/mbdzwkeq"
           method="POST"
           style="display:flex; flex-direction:column; gap:14px; max-width:420px;"
@@ -493,15 +494,11 @@
             "
           >
 
-          <input
-            type="hidden"
-            name="_redirect"
-            value="https://oasisdigital-lab.github.io/oasis-digital/descarga.html"
-          >
-
           <button class="btn btn-primary" type="submit">
             Regístrate para acceder inmediatamente a la descarga
           </button>
+
+          <div id="guiaStatus" style="font-size:14px; color:#8d7448; font-family: Arial, sans-serif;"></div>
         </form>
       </div>
     </section>
@@ -559,6 +556,53 @@
       </div>
     </section>
   </main>
+
+  <script>
+    (function () {
+      const form = document.getElementById("guiaForm");
+      if (!form) return;
+
+      const statusEl = document.getElementById("guiaStatus");
+      const submitBtn = form.querySelector('button[type="submit"]');
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        if (submitBtn) submitBtn.disabled = true;
+        if (statusEl) statusEl.textContent = "Enviando... un momento por favor.";
+
+        try {
+          const formData = new FormData(form);
+          const res = await fetch(form.action, {
+            method: "POST",
+            headers: {
+              Accept: "application/json",
+            },
+            body: formData,
+          });
+
+          if (submitBtn) submitBtn.disabled = false;
+
+          if (res.ok) {
+            const redirectUrl = new URL("descarga.html", window.location.href).href;
+            window.location.href = redirectUrl;
+            return;
+          }
+
+          let message = "Ocurrió un problema. Intenta nuevamente.";
+          try {
+            const data = await res.json();
+            if (data && data.error) message = data.error;
+          } catch (_) {}
+
+          if (statusEl) statusEl.textContent = message;
+        } catch (err) {
+          if (submitBtn) submitBtn.disabled = false;
+          if (statusEl) statusEl.textContent = "No se pudo enviar. Revisa tu conexión e intenta otra vez.";
+        }
+      });
+    })();
+  </script>
 
   <footer class="container">
     © 2026 Oasis Digital
