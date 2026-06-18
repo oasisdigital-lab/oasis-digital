@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Oasis Digital</title>
-  <meta name="description" content="Oasis Digital — tecnología, estrategia y claridad para la era digital." />
+
+  <title>Oasis Digital | Inteligencia Artificial para adultos</title>
+  <meta
+    name="description"
+    content="Oasis Digital — aprende a usar Inteligencia Artificial, ChatGPT y Gemini de forma práctica, simple y sin tecnicismos."
+  />
+
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: Georgia, "Times New Roman", serif;
@@ -19,14 +20,9 @@
       line-height: 1.6;
     }
 
-    .container {
-      width: min(1100px, 92%);
-      margin: 0 auto;
-    }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
 
-    header {
-      padding: 24px 0;
-    }
+    header { padding: 24px 0; }
 
     .brand {
       font-size: 14px;
@@ -54,24 +50,16 @@
       margin-bottom: 20px;
     }
 
-    h1 {
-      font-size: 56px;
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
+    h1 { font-size: 56px; line-height: 1.1; margin-bottom: 20px; }
 
     .hero p {
       font-size: 20px;
       color: #4c5a47;
-      max-width: 620px;
+      max-width: 660px;
       margin-bottom: 28px;
     }
 
-    .buttons {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
+    .buttons { display: flex; gap: 14px; flex-wrap: wrap; }
 
     .btn {
       text-decoration: none;
@@ -80,16 +68,13 @@
       font-size: 16px;
       display: inline-block;
       transition: all 0.2s ease;
+      border: 0;
+      cursor: pointer;
     }
 
-    .btn:hover {
-      transform: translateY(-1px);
-    }
+    .btn:hover { transform: translateY(-1px); }
 
-    .btn-primary {
-      background: #2f3a2c;
-      color: white;
-    }
+    .btn-primary { background: #2f3a2c; color: white; }
 
     .btn-secondary {
       border: 1px solid #2f3a2c;
@@ -160,18 +145,8 @@
       border-radius: 50%;
     }
 
-    .dune1 {
-      bottom: 0;
-      height: 55px;
-      background: #52654d;
-    }
-
-    .dune2 {
-      bottom: 28px;
-      height: 40px;
-      border-top: 2px solid #9b7a49;
-    }
-
+    .dune1 { bottom: 0; height: 55px; background: #52654d; }
+    .dune2 { bottom: 28px; height: 40px; border-top: 2px solid #9b7a49; }
     .dune3 {
       bottom: 18px;
       height: 30px;
@@ -241,13 +216,9 @@
       margin-top: 8px;
     }
 
-    section {
-      padding: 48px 0;
-    }
+    section { padding: 48px 0; }
 
-    .guide-section {
-      padding-top: 12px;
-    }
+    .guide-section { padding-top: 12px; }
 
     .guide-box {
       background: rgba(255,255,255,0.72);
@@ -257,17 +228,24 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.04);
     }
 
-    .guide-box h2 {
-      font-size: 40px;
-      line-height: 1.15;
-      margin-bottom: 16px;
-    }
+    .guide-box h2 { font-size: 40px; line-height: 1.15; margin-bottom: 16px; }
 
     .guide-box p {
       font-size: 20px;
       color: #556251;
-      max-width: 760px;
+      max-width: 820px;
       margin-bottom: 24px;
+    }
+
+    .price {
+      display: inline-block;
+      background: rgba(155, 122, 73, 0.12);
+      border: 1px solid rgba(155, 122, 73, 0.35);
+      color: #6f552e;
+      padding: 10px 14px;
+      border-radius: 14px;
+      font-size: 18px;
+      margin-bottom: 22px;
     }
 
     .cards {
@@ -284,20 +262,10 @@
       box-shadow: 0 8px 20px rgba(0,0,0,0.04);
     }
 
-    .card h3 {
-      margin-bottom: 14px;
-      font-size: 24px;
-    }
+    .card h3 { margin-bottom: 14px; font-size: 24px; }
+    .card p { color: #5a6855; font-size: 17px; }
 
-    .card p {
-      color: #5a6855;
-      font-size: 17px;
-    }
-
-    .purpose {
-      text-align: center;
-      padding: 60px 0;
-    }
+    .purpose { text-align: center; padding: 60px 0; }
 
     .eyebrow {
       font-family: Arial, sans-serif;
@@ -333,10 +301,7 @@
       flex-wrap: wrap;
     }
 
-    .contact-box h3 {
-      font-size: 32px;
-      margin-bottom: 12px;
-    }
+    .contact-box h3 { font-size: 32px; margin-bottom: 12px; }
 
     .contact-box p,
     .contact-box li {
@@ -359,35 +324,16 @@
     }
 
     @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 42px;
-      }
-
-      .purpose h2,
-      .guide-box h2 {
-        font-size: 34px;
-      }
-
-      .logo-text-main {
-        font-size: 38px;
-      }
-
-      .guide-box p,
-      .hero p,
-      .purpose p {
-        font-size: 18px;
-      }
+      .hero { grid-template-columns: 1fr; }
+      .cards { grid-template-columns: 1fr; }
+      h1 { font-size: 42px; }
+      .purpose h2, .guide-box h2 { font-size: 34px; }
+      .logo-text-main { font-size: 38px; }
+      .guide-box p, .hero p, .purpose p { font-size: 18px; }
     }
   </style>
 </head>
+
 <body>
   <header class="container">
     <div class="brand">Oasis Digital</div>
@@ -396,19 +342,28 @@
   <main class="container">
     <section class="hero">
       <div>
-        <div class="badge">Oasis Digital</div>
-        <h1>Un oasis de claridad en medio del mundo digital.</h1>
+        <div class="badge">Curso online + guías gratuitas</div>
+
+        <h1>Domina la Inteligencia Artificial sin ser experto.</h1>
+
         <p>
-          Tecnología, estrategia y mentalidad para construir una vida profesional
-          más consciente, más inteligente y más humana.
+          Aprende a usar ChatGPT y Gemini para ahorrar tiempo, entender documentos,
+          redactar mejores correos y aprovechar la tecnología en tu vida diaria,
+          sin tecnicismos aburridos.
         </p>
 
         <div class="buttons">
-          <a class="btn btn-primary" href="#guia">
-            Descarga la guía gratuita
+          <a
+            class="btn btn-primary"
+            href="https://go.hotmart.com/E106113139M?dp=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver curso de IA
           </a>
-          <a class="btn btn-secondary" href="#contacto">
-            Contacto
+
+          <a class="btn btn-secondary" href="#guia-padres">
+            Guía para padres
           </a>
         </div>
       </div>
@@ -443,10 +398,75 @@
       </div>
     </section>
 
+    <section id="curso">
+      <div class="guide-box">
+        <div class="eyebrow">Curso online</div>
+
+        <h2>Inteligencia Artificial para Adultos</h2>
+
+        <p>
+          Un curso práctico de una hora para aprender a usar ChatGPT y Gemini
+          desde cero. Verás ejemplos reales para analizar documentos, escribir
+          correos, generar imágenes, comparar opciones de compra y tomar mejores
+          decisiones con ayuda de la inteligencia artificial.
+        </p>        
+
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="https://go.hotmart.com/E106113139M?dp=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Comprar curso ahora
+          </a>
+
+          <a class="btn btn-secondary" href="#guia">
+            Descargar guía gratuita
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="guia-padres">
+      <div class="guide-box">
+        <div class="eyebrow">Guía gratuita para padres</div>
+
+        <h2>¿La inteligencia artificial está ayudando a tus hijos... o alejándolos de ti?</h2>
+
+        <p>
+          Descarga gratis esta guía para padres y aprende a identificar señales
+          de aislamiento, dependencia emocional y riesgos ocultos asociados al uso
+          excesivo de herramientas de inteligencia artificial.
+        </p>
+
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="15-Peligros-Ocultos.pdf"
+            download="15-Peligros-Ocultos.pdf"
+          >
+            Descargar guía para padres
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="15-Peligros-Ocultos.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver PDF
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section id="guia" class="guide-section">
       <div class="guide-box">
         <div class="eyebrow">Guía gratuita</div>
+
         <h2>Obtén “7 Formas Reales de Usar IA”</h2>
+
         <p>
           Una guía práctica para adultos que quieren ahorrar tiempo, reducir el estrés
           y empezar a usar inteligencia artificial con más claridad.
@@ -535,35 +555,6 @@
       </div>
     </section>
 
-    <section id="curso">
-  <div class="guide-box">
-    <div class="eyebrow">Curso online</div>
-
-    <h2>Domina la Inteligencia Artificial sin ser experto</h2>
-
-    <p>
-      Aprende a usar ChatGPT y Gemini de forma práctica, simple y sin tecnicismos.
-      Descubre cómo analizar documentos, redactar correos, generar imágenes,
-      tomar mejores decisiones y ahorrar tiempo en tu día a día.
-    </p>  
-
-    <div class="buttons">
-      <a
-        class="btn btn-primary"
-        href="https://go.hotmart.com/E106113139M?dp=1"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Comprar curso ahora
-      </a>
-
-      <a class="btn btn-secondary" href="#guia">
-        Descargar guía gratuita
-      </a>
-    </div>
-  </div>
-</section>
-
     <section id="servicios">
       <div class="cards">
         <div class="card">
@@ -636,9 +627,7 @@
           const formData = new FormData(form);
           const res = await fetch(form.action, {
             method: "POST",
-            headers: {
-              Accept: "application/json",
-            },
+            headers: { Accept: "application/json" },
             body: formData,
           });
 
